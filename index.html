@@ -117,6 +117,36 @@ p{color:var(--muted);font-size:17px;max-width:680px}
 .offer-block{padding:32px 24px}
 section{padding:60px 0}
 }
+.moat-callout{margin-top:32px;padding:32px 36px;background:linear-gradient(135deg,rgba(201,151,58,.08) 0%,rgba(226,185,106,.03) 100%);border:1px solid var(--line-2);border-radius:14px}
+.moat-eyebrow{font-size:11px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:12px}
+.moat-callout p{font-size:18px;color:var(--text);margin:0;max-width:none;line-height:1.6}
+.moat-callout p strong{color:var(--gold-2)}
+.agenda-block{padding:40px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.agenda-item{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.agenda-item:last-child{border-bottom:0;padding-bottom:0}
+.agenda-item:first-child{padding-top:0}
+.agenda-time{font-family:monospace;color:var(--gold-2);font-weight:700;font-size:14px;letter-spacing:.05em;padding-top:4px}
+.agenda-content h4{font-size:16px;color:var(--text);text-transform:none;letter-spacing:0;margin:0 0 6px;font-weight:600}
+.agenda-content p{color:var(--muted);font-size:14px;margin:0;max-width:none;line-height:1.5}
+.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
+.contrast-card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.contrast-card.current{opacity:.7}
+.contrast-card.future{border-color:var(--line-2);background:linear-gradient(180deg,rgba(201,151,58,.06) 0%,var(--bg-2) 100%)}
+.contrast-tag{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px;display:inline-block}
+.contrast-card.current .contrast-tag{background:rgba(166,152,133,.15);color:var(--muted);border:1px solid rgba(166,152,133,.3)}
+.contrast-card.future .contrast-tag{background:rgba(201,151,58,.15);color:var(--gold-2);border:1px solid rgba(201,151,58,.3)}
+.contrast-card h3{margin-bottom:18px;font-size:20px}
+.contrast-card ul{list-style:none;padding:0;margin:0}
+.contrast-card li{padding:8px 0 8px 22px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
+.contrast-card.current li::before{content:'';width:6px;height:6px;background:var(--muted);border-radius:50%;position:absolute;left:0;top:14px;opacity:.5}
+.contrast-card.future li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
+.premium-table{margin-top:24px;border-color:var(--line-2)!important;background:linear-gradient(180deg,rgba(201,151,58,.04) 0%,var(--bg-2) 100%)!important}
+.premium-eyebrow{display:inline-block;padding:5px 14px;background:rgba(201,151,58,.15);border:1px solid var(--line-2);border-radius:24px;font-size:11px;font-weight:700;color:var(--gold-2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.call-agenda{text-align:left;max-width:520px;margin:0 auto 32px;display:grid;gap:14px}
+.call-agenda-item{display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:start}
+.call-agenda-num{font-family:monospace;color:var(--gold-2);font-weight:700;font-size:14px;padding-top:2px}
+.call-agenda-text{color:var(--text);font-size:15px;line-height:1.6}
+@media(max-width:768px){.contrast-grid{grid-template-columns:1fr}.agenda-block{padding:28px 20px}.agenda-item{grid-template-columns:1fr;gap:4px}.moat-callout{padding:24px}}
 .reveal{opacity:0;transform:translateY(30px);transition:.8s}
 .reveal.in{opacity:1;transform:translateY(0)}
 </style>
@@ -155,6 +185,7 @@ section{padding:60px 0}
 <p>Real estate is also seasonal. December through February the market goes quiet. Listings slow. Commissions slow. Every other top agent in the East Bay faces the same trough.</p>
 <p><strong>You shouldn't.</strong></p>
 <p>And here's why now. The agent-coaching market is consolidating quickly. Every quarter another six-figure operator launches a coaching arm. The slots in front of peer agents fill up. The window for a late-start, analytical, MLS-record-setting voice is open right now. It is not going to be open in two years.</p>
+<p>And specifically for you. The "I started at fifty-five and did $500M in six years" arc has a half-life. It compounds proof for the first ten years and starts losing edge after that. You're at year six. Right now, every peer agent who hears the story does the math and asks <em>how did you do that</em>. At year ten the same story reads as "a successful late-career agent" instead of "an outlier you have to learn from." The arbitrage is open right now and starts narrowing meaningfully every twelve months.</p>
 <p>This page is the plan to take the teaching you already do, productize it as a high-ticket mastermind plus 1-on-1 mentorship, and run it twelve months a year alongside the brokerage. Not instead of it. Alongside it.</p>
 <div class="signature">- Francis | Digital Pathway Consulting</div>
 </div>
@@ -235,6 +266,11 @@ section{padding:60px 0}
 <div class="market-callout reveal">
 Every name above is selling info to agents who want what you can already do. The category has $20K–$30K/year price tags on it. There is <strong>no version</strong> of this with a $500M-in-six-years, late-start, MLS-record-setting story attached. That story is your moat.
 </div>
+
+<div class="moat-callout reveal">
+<div class="moat-eyebrow">Your Moat, In One Sentence</div>
+<p>Your positioning is the <strong>analytical lens</strong>. Other agent coaches sell scripts, energy management, and hustle culture. You sell comp adjustments, pricing math, and disciplined deal teardowns. Nobody else owns that lane in the existing coach roster. The Comp Adjustment Masterclass you already deliver inside Sotheby's is the seed. The productized version of that is the moat.</p>
+</div>
 </div>
 </section>
 
@@ -305,6 +341,66 @@ Every name above is selling info to agents who want what you can already do. The
 </section>
 
 <section>
+<div class="container-narrow">
+<div class="eyebrow reveal">Sample</div>
+<h2 class="reveal">A Day Inside The Mastermind</h2>
+<p class="section-sub reveal">Day 1 agenda for the in-person event. Day 2 covers implementation work, dealbook reviews, and individual breakouts.</p>
+
+<div class="agenda-block reveal">
+<div class="agenda-item">
+<div class="agenda-time">9:00 AM</div>
+<div class="agenda-content">
+<h4>Welcome + The Frame</h4>
+<p>Why this room. Why now. What every seat in here walks away with by Sunday night.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">9:45 AM</div>
+<div class="agenda-content">
+<h4>The Late-Start Playbook</h4>
+<p>How analytical thinking and disciplined process outpace tenure. The MCI-to-$500M arc deconstructed into a system anyone in the room can apply.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">11:00 AM</div>
+<div class="agenda-content">
+<h4>Comp Adjustments, Live</h4>
+<p>Working through a real recent comp set in front of the room. Not slides. The actual sheet, the actual decisions, the actual numbers. The Sotheby's masterclass content, expanded.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">1:30 PM</div>
+<div class="agenda-content">
+<h4>The $18M Happy Valley Teardown</h4>
+<p>What set the Lafayette MLS record. The pricing call, the buyer side, the specific moves that closed the gap.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">3:00 PM</div>
+<div class="agenda-content">
+<h4>The $23M Piedmont Teardown</h4>
+<p>How the Piedmont all-time record actually got priced and positioned. The mistakes other agents would have made on the same listing.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">4:30 PM</div>
+<div class="agenda-content">
+<h4>Pricing Confidence vs Pricing Anxiety</h4>
+<p>The mindset shift that separates agents who hold list price from agents who chase the market down. Where it comes from and how to build it.</p>
+</div>
+</div>
+<div class="agenda-item">
+<div class="agenda-time">5:30 PM</div>
+<div class="agenda-content">
+<h4>Day 1 Wrap + 30-Day Action Plan</h4>
+<p>Each attendee leaves Day 1 with a written 30-day plan tied to their current dealbook. We work them on Day 2.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
 <div class="container">
 <div class="eyebrow reveal">Revenue Projection</div>
 <h2 class="reveal">What This Looks Like At Conservative Numbers</h2>
@@ -331,6 +427,62 @@ Every name above is selling info to agents who want what you can already do. The
 
 <div class="rev-note reveal">
 This runs <strong>alongside</strong> the brokerage. Not instead of it. The deal flow stays the deal flow, the team stays the team, and your Sotheby's relationship stays exactly where it is. What this adds is a parallel income stream that <strong>does not dip with the listing calendar</strong>. December through February, when most agents in the East Bay go quiet, the mentorship cohort pays in advance, the mastermind seats are pre-sold for spring, and the webinar funnel keeps converting. That is the entire point.
+</div>
+
+<div class="rev-table premium-table reveal">
+<div class="premium-eyebrow">Premium-Only Ceiling</div>
+<p style="color:var(--muted);font-size:15px;margin-bottom:20px;max-width:none">Same plan, dialed up. Premium-tier seats only, premium-tier mentorship, derivative revenue from speaking and panel work the positioning attracts.</p>
+<div class="rev-row">
+<div class="rev-stream"><strong>Premium Mastermind</strong>4 events / year &nbsp;·&nbsp; 25 seats avg @ $10,000</div>
+<div class="rev-amount">$1,000,000</div>
+</div>
+<div class="rev-row">
+<div class="rev-stream"><strong>1-on-1 Mentorship (Premium tier)</strong>2 cohorts / year &nbsp;·&nbsp; 6 spots @ $20,000</div>
+<div class="rev-amount">$240,000</div>
+</div>
+<div class="rev-row">
+<div class="rev-stream"><strong>Speaking + Appearances</strong>positioning derivative, ramps month 6+</div>
+<div class="rev-amount">$30,000+</div>
+</div>
+<div class="rev-total">
+<div class="rev-total-label">Year-One Ceiling</div>
+<div class="rev-total-amount">$1,270,000+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">The Picture</div>
+<h2 class="reveal">Two Versions Of December 2026</h2>
+<p class="section-sub reveal">Same starting point. Different decision. Twelve months apart.</p>
+
+<div class="contrast-grid">
+<div class="contrast-card current reveal">
+<div class="contrast-tag">If Nothing Changes</div>
+<h3>Q4 2026, Status Quo</h3>
+<ul>
+<li>Still East Bay's #1 luxury agent by volume</li>
+<li>Still teaching for Sotheby's, not for yourself</li>
+<li>Still no Newton Cane-branded product</li>
+<li>December–February still goes quiet</li>
+<li>$0 in info revenue, year six running</li>
+<li>The late-start arbitrage twelve months smaller</li>
+</ul>
+</div>
+<div class="contrast-card future reveal">
+<div class="contrast-tag">If We Build This</div>
+<h3>Q4 2026, System Live</h3>
+<ul>
+<li>Mastermind run, recordings owned, list captured</li>
+<li>Two mentorship cohorts active, $240K+ booked</li>
+<li>Webinar funnel converting through the trough</li>
+<li>$600K+ in info revenue, year one</li>
+<li>December–February pre-billed and pre-sold</li>
+<li>The late-start arbitrage is yours, productized</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
@@ -454,8 +606,15 @@ This runs <strong>alongside</strong> the brokerage. Not instead of it. The deal 
 <div class="container">
 <div class="cta-section reveal">
 <div class="eyebrow">Next Step</div>
-<h2>Twenty Minutes. No Pitch.<br>Just Look At The Plan Together.</h2>
-<p>If any of this clicks, the next step is a short call to walk through the specific shape of Phase 1 for you, and decide whether it's something we build together or something you take in-house. The plan above is built. The numbers are conservative. The team has already done the work. The only outstanding decision is whether you want to be the one to put your name on it.</p>
+<h2>Twenty Minutes. Four Topics.<br>You Decide From There.</h2>
+<p style="margin-bottom:24px">Here's exactly what we cover on the call, in order.</p>
+<div class="call-agenda">
+<div class="call-agenda-item"><span class="call-agenda-num">01</span><span class="call-agenda-text">The shape of Phase 1 calibrated to your specific network and the existing demand we're seeing inside Sotheby's panels.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">02</span><span class="call-agenda-text">Pricing tier and cohort size we'd run for you, based on which audience you want to attract.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">03</span><span class="call-agenda-text">Timing, kickoff date, and what your time commitment actually looks like week to week.</span></div>
+<div class="call-agenda-item"><span class="call-agenda-num">04</span><span class="call-agenda-text">What gets built, what stays in-house, and what happens after the 90 days are up.</span></div>
+</div>
+<p style="margin-bottom:36px">The plan above is built. The numbers are conservative. The team has already done the work. The only outstanding decision is whether you want to be the one to put your name on it.</p>
 <a href="https://calendly.com/andreicopy/15min" class="cta-primary" target="_blank">Book A Call</a>
 <div class="cta-sign">- Francis | Digital Pathway Consulting</div>
 </div>
