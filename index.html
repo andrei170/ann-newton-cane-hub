@@ -106,6 +106,9 @@ p{color:var(--muted);font-size:17px;max-width:680px}
 .cta-primary{display:inline-block;padding:20px 44px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 12px 40px rgba(201,151,58,.3);transition:.2s}
 .cta-primary:hover{transform:translateY(-2px)}
 .cta-sign{margin-top:28px;font-size:14px;color:var(--gold-2);font-style:italic}
+.hero-cta-row{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-outline{display:inline-block;padding:18px 36px;background:transparent;color:var(--gold-2);text-decoration:none;border:1px solid var(--line-2);border-radius:12px;font-weight:600;font-size:15px;transition:.2s}
+.cta-outline:hover{border-color:var(--gold-2)}
 .footer{padding:48px 0;border-top:1px solid var(--line);text-align:center}
 .footer p{margin:0 auto;font-size:13px;color:var(--muted);letter-spacing:.05em}
 @media(max-width:768px){
@@ -142,11 +145,28 @@ section{padding:60px 0}
 .contrast-card.future li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
 .premium-table{margin-top:24px;border-color:var(--line-2)!important;background:linear-gradient(180deg,rgba(201,151,58,.04) 0%,var(--bg-2) 100%)!important}
 .premium-eyebrow{display:inline-block;padding:5px 14px;background:rgba(201,151,58,.15);border:1px solid var(--line-2);border-radius:24px;font-size:11px;font-weight:700;color:var(--gold-2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.asset-table{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;padding:8px 32px;margin-top:8px}
+.asset-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.asset-row:last-child{border-bottom:0}
+.asset-row.asset-header{padding:24px 0 18px}
+.asset-col-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;font-weight:700}
+.asset-col-label.asset-built-label{color:var(--gold-2)}
+.asset-cat{font-size:14px;color:var(--muted);font-weight:500}
+.asset-val{font-size:17px;font-weight:600}
+.asset-today{color:var(--muted);opacity:.75}
+.asset-built{color:var(--gold-2)}
+.anti-hype{margin-top:32px;padding:32px 36px;background:rgba(0,0,0,.18);border:1px dashed var(--line-2);border-radius:14px}
+.anti-hype-eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:18px}
+.anti-hype-list{list-style:none;padding:0;margin:0 0 20px}
+.anti-hype-list li{padding:6px 0 6px 26px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
+.anti-hype-list li::before{content:'×';position:absolute;left:0;top:2px;color:var(--red);font-size:20px;font-weight:700;line-height:1}
+.anti-hype p{font-size:15px;color:var(--text);margin:0;max-width:none;line-height:1.7}
+.anti-hype p strong{color:var(--gold-2)}
 .call-agenda{text-align:left;max-width:520px;margin:0 auto 32px;display:grid;gap:14px}
 .call-agenda-item{display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:start}
 .call-agenda-num{font-family:monospace;color:var(--gold-2);font-weight:700;font-size:14px;padding-top:2px}
 .call-agenda-text{color:var(--text);font-size:15px;line-height:1.6}
-@media(max-width:768px){.contrast-grid{grid-template-columns:1fr}.agenda-block{padding:28px 20px}.agenda-item{grid-template-columns:1fr;gap:4px}.moat-callout{padding:24px}}
+@media(max-width:768px){.contrast-grid{grid-template-columns:1fr}.agenda-block{padding:28px 20px}.agenda-item{grid-template-columns:1fr;gap:4px}.moat-callout{padding:24px}.asset-table{padding:8px 20px}.asset-row{grid-template-columns:1fr;gap:6px;padding:14px 0}.asset-row.asset-header{display:none}.asset-cat{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-2)}.anti-hype{padding:24px}}
 .reveal{opacity:0;transform:translateY(30px);transition:.8s}
 .reveal.in{opacity:1;transform:translateY(0)}
 </style>
@@ -169,6 +189,10 @@ section{padding:60px 0}
 <div class="meta-item"><div class="meta-label">Years licensed</div><div class="meta-value">6</div></div>
 <div class="meta-item"><div class="meta-label">East Bay rank</div><div class="meta-value">#1 by volume</div></div>
 <div class="meta-item"><div class="meta-label">Online product revenue</div><div class="meta-value">$0</div></div>
+</div>
+<div class="hero-cta-row reveal">
+<a href="https://andrei170.github.io/ann-newton-cane-mastermind/" target="_blank" class="cta-primary" style="padding:18px 40px;font-size:16px;border-radius:12px;box-shadow:0 12px 40px rgba(201,151,58,.3)">See The Live Demo →</a>
+<a href="https://calendly.com/andreicopy/15min" target="_blank" class="cta-outline">Book A Call</a>
 </div>
 </div>
 </section>
@@ -270,6 +294,52 @@ Every name above is selling info to agents who want what you can already do. The
 <div class="moat-callout reveal">
 <div class="moat-eyebrow">Your Moat, In One Sentence</div>
 <p>Your positioning is the <strong>analytical lens</strong>. Other agent coaches sell scripts, energy management, and hustle culture. You sell comp adjustments, pricing math, and disciplined deal teardowns. Nobody else owns that lane in the existing coach roster. The Comp Adjustment Masterclass you already deliver inside Sotheby's is the seed. The productized version of that is the moat.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">Asset Ownership</div>
+<h2 class="reveal">Where The Hours Actually Go</h2>
+<p class="section-sub reveal">Same teaching. Same audience. Different ownership of every asset produced.</p>
+
+<div class="asset-table reveal">
+<div class="asset-row asset-header">
+<div></div>
+<div class="asset-col-label">Sotheby's panel today</div>
+<div class="asset-col-label asset-built-label">Your own mastermind</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Seats per session</div>
+<div class="asset-val asset-today">~50 (Sotheby's caps)</div>
+<div class="asset-val asset-built">15–25 (your call)</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Your revenue per session</div>
+<div class="asset-val asset-today">$0</div>
+<div class="asset-val asset-built">$75K–$187K</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Recordings owned by</div>
+<div class="asset-val asset-today">Sotheby's</div>
+<div class="asset-val asset-built">You</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Email list captured by</div>
+<div class="asset-val asset-today">Sotheby's</div>
+<div class="asset-val asset-built">You</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">Follow-on revenue</div>
+<div class="asset-val asset-today">None</div>
+<div class="asset-val asset-built">Mentorship + Course</div>
+</div>
+<div class="asset-row">
+<div class="asset-cat">What happens after the room clears</div>
+<div class="asset-val asset-today">Archived</div>
+<div class="asset-val asset-built">Compounds</div>
+</div>
 </div>
 </div>
 </section>
@@ -533,6 +603,17 @@ This runs <strong>alongside</strong> the brokerage. Not instead of it. The deal 
 </ul>
 <div class="price-note">Investment is set on the call once we agree the plan fits. No retainer until the system produces.</div>
 </div>
+
+<div class="anti-hype reveal">
+<div class="anti-hype-eyebrow">What We Don't Promise</div>
+<ul class="anti-hype-list">
+<li>We don't promise you'll go viral.</li>
+<li>We don't promise podcast bookings.</li>
+<li>We don't promise vanity follower numbers.</li>
+<li>We don't promise to make you famous in a market that doesn't care about famous.</li>
+</ul>
+<p>What we promise is <strong>a launched system that produces conservative six-figure year-one revenue, runs through your slow season, and that you own end to end</strong>. That's the floor. The ceiling and the social side are byproducts, not the goal.</p>
+</div>
 </div>
 </section>
 
@@ -571,6 +652,16 @@ This runs <strong>alongside</strong> the brokerage. Not instead of it. The deal 
 <div class="faq-item">
 <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What about December through February when the market goes quiet?<div class="faq-toggle"></div></div>
 <div class="faq-a"><p>This is the entire reason to build it. Real estate slows. Info offers don't. The mentorship cohort that starts in November pays in advance and runs through Q1. The mastermind for spring is pre-sold in December and January. The webinar funnel runs continuously. Year-round revenue is the unlock, and it lands in your account during the months your peers are watching the calendar.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if the first mastermind doesn't fill?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>We design Phase 1 around the existing demand we can actually see — your Sotheby's panel attendees, your Women Empowered alumni, your LinkedIn connections, your direct contacts. That's why it sells. But if the first launch under-fills (say, 8 confirmed instead of 12), we don't push the event into a half-empty room. We pause, restructure outreach, push the date by 30 days, and run again with a sharper angle. The build doesn't continue billing while the event isn't running. If after a second attempt it's clear the audience isn't there at the price tier we modeled, we restructure the offer from the bottom up before continuing to Phase 2.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I want to stop after Phase 1?<div class="faq-toggle"></div></div>
+<div class="faq-a"><p>That's an option. Phase 1 is the wedge, and it's also the natural stopping point if you decide you don't want a Phase 2 mentorship and Phase 3 webinar/course on top of it. After Phase 1 you own the recordings, the email list, the brand video, the deck, and the playbook. You can run another mastermind yourself a year later, or never run another one again. We build Phase 1 to stand alone in case the rest of the plan stops being interesting to you.</p></div>
 </div>
 
 <div class="faq-item">
